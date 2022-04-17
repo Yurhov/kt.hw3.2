@@ -101,7 +101,7 @@ class MainKtTest {
         val paragraph = 2
         val transfer = 1000_00
         val totalTransfer = 0
-        val expectedResult = 35_00
+        val expectedResult = 33_00
 
         //act
         val result = commissionCalculation(
