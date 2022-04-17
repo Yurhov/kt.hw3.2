@@ -41,11 +41,11 @@ fun commissionCalculation(paragraph: Int, transfer: Int, totalTransfer: Int): In
         when (paragraph) {
             1 -> {
                 if (totalTransfer < 75_000_00) return 0
-                else return transfer / 1000 * 6 + 20_00
+                else return transfer / 1000 * 6 + 20_00 //комиссия 0,6% + 20 руб
             }
             2 -> {
-                if (transfer / 10000 * 75 < 35_00) return 35_00
-                return transfer / 10000 * 75
+                if (transfer / 10000 * 75 < 35_00) return 35_00 //комиссия 35 руб
+                return transfer / 10000 * 75 //комиссия 0,75%
             }
             3 -> {
                 if ((totalTransfer + transfer) > 40_000_00 || transfer > 15_000_00) {
